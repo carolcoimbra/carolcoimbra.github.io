@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>UFMG INFORMÁTICA JÚNIOR</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <style type="text/css">
+${demo.css}
+        </style>
+        <script type="text/javascript">
+
+var chart;
+$(document).ready(function () {
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'Question10'
+        },
+        credits: {
+            enabled: false
+        },
+        legend: {
+            layout: 'horizontal',
+            verticalAlign: 'bottom'
+        },
+        title: {
+            text: 'A postura dos membros é adequada com o ambiente da empresa.'
+        },
+        tooltip: {
+            formatter: function () {
+                if (this.series.name == 'Cumulativo') {
+                    return this.y + '%';
+                }
+                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
+            }
+        },
+        xAxis: [{
+            title: {
+                text: 'Avaliação'
+            },
+            categories: ['1', '2', '3', '4', '5']
+        }],
+        yAxis: [{
+            title: {
+                text: 'Quantidade de Membros'
+            }            
+        }],
+        series: [{
+            data: [0, 0, 6, 10, 4],
+            name: 'Avaliações',
+            type: 'column'
+        }]
+    });
+});
+
+       </script>
+    </head>
+    <body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="Question10" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </body>
+</html>

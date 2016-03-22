@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>UFMG INFORMÁTICA JÚNIOR</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <style type="text/css">
+${demo.css}
+        </style>
+        <script type="text/javascript">
+
+$(function () {
+    $('#Question6').highcharts({
+        title: {
+            text: 'Qual cargo você deseja se candidatar no futuro?'
+        },
+         credits: {
+            enabled: false
+        },
+        xAxis: {
+            categories: ['Cargos']
+        },
+        yAxis: {
+            title: {
+                text: 'Porcentagem de Membros'
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.3,
+                borderWidth: 0,
+            }
+        },
+        labels: {
+            items: [{
+                html: 'Você deseja se candidatar a algum cargo no futuro?',
+                style: {
+                    left: '5px',
+                    top: '1px',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) 
+                }
+            }]
+        },
+        series: [
+        {
+            type: 'pie',
+            name: 'Porcentagem de Membros',
+            data: [{
+                name: 'Sim',
+                y: 2/22,
+               
+            }, {
+                name: 'Não sei/Não responderam',
+                y: 3/22,
+                
+            }, {
+                name: 'Não',
+                y: 17/22,
+           }],
+            center: [50, 100],
+            size: 120,
+            showInLegend: false,
+            dataLabels: {
+                enabled: true
+            }
+        },{
+            type: 'column',
+            name: 'Conselho Administrativo',
+            data: [1/2]
+        }, {
+            type: 'column',
+            name: 'Diretoria de Recursos Humanos',
+            data: [1/2]
+        }]
+    });
+});
+
+
+       </script>
+    </head>
+    <body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="Question6" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </body>
+</html>

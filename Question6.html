@@ -17,6 +17,7 @@ $(function () {
         title: {
             text: 'Qual cargo você deseja se candidatar no futuro?'
         },
+        
          credits: {
             enabled: false
         },
@@ -48,23 +49,27 @@ $(function () {
         {
             type: 'pie',
             name: 'Porcentagem de Membros',
+            tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
             data: [{
                 name: 'Sim',
-                y: 2/22,
+                y: 2/20,
                
             }, {
-                name: 'Não sei/Não responderam',
-                y: 3/22,
+                name: 'Não souberam responder',
+                y: 1/20,
                 
             }, {
                 name: 'Não',
-                y: 17/22,
+                y: 17/20,
            }],
             center: [50, 100],
             size: 120,
             showInLegend: false,
             dataLabels: {
-                enabled: true
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
             }
         },{
             type: 'column',
@@ -74,7 +79,7 @@ $(function () {
             type: 'column',
             name: 'Diretoria de Recursos Humanos',
             data: [1/2]
-        }]
+        }],
     });
 });
 

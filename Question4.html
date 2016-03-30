@@ -26,48 +26,22 @@ $(document).ready(function () {
         title: {
             text: 'Você está satisfeito com sua alocação nessa diretoria?'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+        
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
-            categories: ['1', '2', '3', '4', '5']
+            categories: ['Nada satisfeito', 'Pouco satisfeito', 'Às vezes satisfeito', 'Frequentemente satisfeito', 'Totalmente satisfeito']
         }],
         yAxis: [{
             title: {
                 text: 'Quantidade de Membros'
             }
-        }, {
-            title: {
-                text: 'Cumulativo'
-            },
-            labels: {
-                formatter: function () {
-                    return this.value + '%';
-                }
-            },
-            max: 100,
-            min: 0,
-            opposite: true,
-            
         }],
         series: [{
             data: [0, 0, 1, 11, 8],
             name: 'Avaliações',
             type: 'column'
-        }, {
-            data: [0, 0, 100/22, 1200/22, 2000/22],
-            name: 'Cumulativo',
-            type: 'spline',
-            yAxis: 1,
-            id: 'accumulated'
         }]
     });
 });

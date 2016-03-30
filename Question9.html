@@ -26,19 +26,12 @@ $(document).ready(function () {
         title: {
             text: 'A produtividade dos projetos quase nunca fica prejudicada por falta de organização e planejamento entre os setores da empresa.'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
-            categories: ['1', '2', '3', '4', '5']
+            categories: ['Discordo Completamente', 'Discordo', 'Meio termo', 'Concordo', 'Concordo Completamente']
         }],
         yAxis: [{
             title: {

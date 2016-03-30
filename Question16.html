@@ -33,7 +33,8 @@ $(function () {
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'               }
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'               
+                }
             }
         },
         series: [{
@@ -41,29 +42,16 @@ $(function () {
             colorByPoint: true,
             data: [{
                 name: '0-6 meses',
-                y: 8/22,
+                y: 8/20,
             },{
-                name: 'Não sei/Não responderam',
-                y: 4/22
+                name: 'Não souberam responder',
+                y: 2/20
             }, {
-                    name: '13-18 meses',
-                y: 0
-            },
-              {
-                  name: '19-24 meses',
-                  y: 1/22
-              },
-                {
-                  name: '25-30 meses',
-                  y: 0
-              },
-                {
-                  name: '31-36 meses',
-                  y: 1/22
-              },
-                    {   
+                    name: '13 meses ou mais',
+                y: 2/20
+            },{   
                 name: '7-12 meses',
-                y: 8/22
+                y: 8/20
             }]
         }]
     });

@@ -26,17 +26,10 @@ $(document).ready(function () {
         title: {
             text: 'Você recomendaria a um conhecido participar da UFMG Informática Júnior?'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
             categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
         }],

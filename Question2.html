@@ -26,48 +26,22 @@ $(document).ready(function () {
         title: {
             text: 'Como você avalia o trabalho dos demais membros de sua diretoria?'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+        
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
-            categories: ['1', '2', '3', '4', '5']
+            categories: ['Péssimo', 'Ruim', 'Mediano', 'Bom', 'Excelente']
         }],
         yAxis: [{
             title: {
                 text: 'Quantidade de Membros'
             }
-        }, {
-            title: {
-                text: 'Cumulativo'
-          },
-            labels: {
-                formatter: function () {
-                    return this.value + '%';
-                }
-            },
-            max: 100,
-            min: 0,
-            opposite: true,
-            
         }],
         series: [{
             data: [0, 1, 5, 7, 7],
             name: 'Avaliações',
             type: 'column'
-        }, {
-            data: [0, 100/22, 600/22, 1300/22, 2000/22],
-            name: 'Cumulativo',
-            type: 'spline',
-            yAxis: 1,
-            id: 'accumulated'
         }]
     });
 });

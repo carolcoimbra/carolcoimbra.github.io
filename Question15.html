@@ -26,48 +26,22 @@ $(document).ready(function () {
         title: {
             text: 'Quão motivado você está em permanecer na empresa nos próximos meses?'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+        
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
-            categories: ['1', '2', '3', '4', '5']
+            categories: ['Nada motivado', 'Pouco motivado', 'Motivado', 'Muito motivado', 'Extremamente motivado']
         }],
         yAxis: [{
             title: {
                 text: 'Quantidade de Membros'
             }
-        }, {
-            title: {
-                text: 'Cumulativo'
-            },
-            labels: {
-                formatter: function () {
-                    return this.value + '%';
-                }
-            },
-            max: 100,
-            min: 0,
-            opposite: true,
-            
         }],
         series: [{
             data: [1, 1, 6, 6, 6],
             name: 'Avaliações',
             type: 'column'
-        }, {
-            data: [100/22, 200/22, 800/22, 1400/22, 2000/22],
-            name: 'Cumulativo',
-            type: 'spline',
-            yAxis: 1,
-            id: 'accumulated'
         }]
     });
 });

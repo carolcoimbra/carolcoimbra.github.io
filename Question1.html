@@ -3,7 +3,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>UFMG INFORMÁTICA JÚNIOR</title>
-
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <style type="text/css">
 ${demo.css}
@@ -26,48 +25,22 @@ $(document).ready(function () {
         title: {
             text: 'Como você avalia seu envolvimento atual na empresa?'
         },
-        tooltip: {
-            formatter: function () {
-                if (this.series.name == 'Cumulativo') {
-                    return this.y + '%';
-                }
-                return this.x + '<br/>' + '<b> ' + this.y.toString().replace('.', ',') + ' </b>';
-            }
-        },
+
         xAxis: [{
             title: {
-                text: 'Avaliação'
+                text: 'Avaliações'
             },
-            categories: ['1', '2', '3', '4', '5']
+            categories: ['Nada envolvido', 'Pouco envolvido', 'Às vezes envolvido', 'Frequentemente envolvido', 'Totalmente envolvido']
         }],
         yAxis: [{
             title: {
                 text: 'Quantidade de Membros'
             }
-        }, { 
-                title: {
-                text: 'Cumulativo'
-            }, 
-            labels: {
-                formatter: function () {
-                    return this.value + '%';
-                }
-            },
-            max: 100,
-            min: 0,
-            opposite: true,
-            
         }],
         series: [{
             data: [1, 1, 12, 3, 3],
             name: 'Avaliações',
             type: 'column'
-        }, {
-            data: [100/22, 200/22, 1400/22, 1700/22, 2000/22],
-            name: 'Cumulativo',
-            type: 'spline',
-            yAxis: 1,
-            id: 'accumulated'
         }]
     });
 });

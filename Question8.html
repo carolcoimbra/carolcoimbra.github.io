@@ -36,7 +36,7 @@ $(document).ready(function () {
         },
 
         xAxis: {
-            categories: ['Desenvolvimento de Sistemas mobile', 'Desenvolvimento de Sistemas web', 'Desenvolvimento de Sites', 'Processo Seletivo/Programa Trainee', 'Planejamento Estratégico', 'Nenhum'],
+            categories: ['Desenvolvimento de Sistemas mobile', 'Desenvolvimento de Sistemas web', 'Desenvolvimento de Sites', 'Processo Seletivo/Programa Trainee', 'Planejamento Estratégico', 'Outros'],
             tickmarkPlacement: 'on',
             lineWidth: 0
         },
@@ -46,18 +46,13 @@ $(document).ready(function () {
             min: 0
         },
 
-        tooltip: {
-            shared: true,
-            pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
-        },
-
         legend: {
             y: 70,
             layout: 'vertical'
         },
 
         series: [{
-            name: 'Diretorias',
+            name: 'Quantidade de Membros',
             data: [13, 12, 9, 7, 4, 1],
             pointPlacement: 'on',            
         }]

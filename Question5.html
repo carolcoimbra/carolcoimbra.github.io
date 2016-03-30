@@ -36,20 +36,13 @@ $(document).ready(function () {
         },
 
         xAxis: {
-            categories: ['Administrativo-Financeiro', 'Marketing e Vendas', 'RH', 'Projetos', 'Presidência'],
-            tickmarkPlacement: 'on',
-            lineWidth: 0
+            categories: ['Administrativo-Financeiro', 'Marketing e Vendas', 'Recursos Humanos', 'Projetos', 'Presidência'],
         },
 
         yAxis: {
             lineWidth: 0,
             min: 0
-        },
-
-        tooltip: {
-            shared: true,
-            pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
-        },
+        },        
 
         legend: {
             y: 70,
@@ -57,7 +50,7 @@ $(document).ready(function () {
         },
 
         series: [{
-            name: 'Diretorias',
+            name: 'Quantidade de Membros',
             data: [4, 8, 7, 14, 4],
             pointPlacement: 'on',            
         }]

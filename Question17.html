@@ -1,63 +1,63 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>UFMG INFORMÁTICA JÚNIOR</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UFMG INFORMÁTICA JÚNIOR</title>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <style type="text/css">
-${demo.css}
-        </style>
-        <script type="text/javascript">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style type="text/css">
+        ${demo.css}
+    </style>
+    <script type="text/javascript">
 
-$(function () {
-    $('#Question17').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-        },
-        title: {
-            text: 'Você acredita ter à sua disposição os materiais e recursos necessários para desempenhar um bom trabalho?'
-        },
-        credits: {
-            enabled: false
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'               
-                }
-            }
-        },
-        series: [{
-            name: 'Porcentagem de Membros',
-            colorByPoint: true,
-            data: [{
-                name: 'Sim',
-                y: 19/20
-            },  {
-                name: 'Não',
-                y: 1/20
-            }]
-        }]
-    });
-});
+        $(function () {
+            $('#Question17').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    type: 'pie'
+                },
+                title: {
+                    text: 'Você acredita ter à sua disposição os materiais e recursos necessários para desempenhar um bom trabalho?'
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Porcentagem de Membros',
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Sim',
+                        y: 19/20
+                    },  {
+                        name: 'Não',
+                        y: 1/20
+                    }]
+                }]
+            });
+        });
 
 
-       </script>
-    </head>
-    <body>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </script>
+</head>
+<body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-<div id="Question17" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-    </body>
+    <div id="Question17" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
 </html>

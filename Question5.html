@@ -1,70 +1,70 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>UFMG INFORMÁTICA JÚNIOR</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UFMG INFORMÁTICA JÚNIOR</title>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/highcharts-more.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-        <style type="text/css">
-${demo.css}
-        </style>
-        <script type="text/javascript">
+    <style type="text/css">
+        ${demo.css}
+    </style>
+    <script type="text/javascript">
 
-var chart;
-$(document).ready(function () {
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'Question5',
-            polar: true,
-            type: 'line'
-        },
-        
-          credits: {
-            enabled: false
-        },
+        var chart;
+        $(document).ready(function () {
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'Question5',
+                    polar: true,
+                    type: 'line'
+                },
 
-        title: {
-            text: 'De quais diretorias você gostaria de participar?',
-        },
+                credits: {
+                    enabled: false
+                },
 
-        pane: {
-            size: '80%'
-        },
+                title: {
+                    text: 'De quais diretorias você gostaria de participar?',
+                },
 
-        xAxis: {
-            categories: ['Administrativo-Financeiro', 'Marketing e Vendas', 'Recursos Humanos', 'Projetos', 'Presidência'],
-            tickmarkPlacement: 'on',
-        },
+                pane: {
+                    size: '80%'
+                },
 
-        yAxis: {
-            lineWidth: 0,
-            min: 0
-        },        
+                xAxis: {
+                    categories: ['Administrativo-Financeiro', 'Marketing e Vendas', 'Recursos Humanos', 'Projetos', 'Presidência'],
+                    tickmarkPlacement: 'on',
+                },
 
-        legend: {
-            y: 70,
-            layout: 'vertical'
-        },
+                yAxis: {
+                    lineWidth: 0,
+                    min: 0
+                },
 
-        series: [{
-            name: 'Quantidade de Membros',
-            data: [4, 8, 7, 14, 4],
-            pointPlacement: 'on',            
-        }]
+                legend: {
+                    y: 70,
+                    layout: 'vertical'
+                },
 
-    });
-});
+                series: [{
+                    name: 'Quantidade de Membros',
+                    data: [4, 8, 7, 14, 4],
+                    pointPlacement: 'on',
+                }]
 
-       </script>
-    </head>
-    <body>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+            });
+        });
 
-<div id="Question5" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-    </body>
+    </script>
+</head>
+<body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <div id="Question5" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
 </html>

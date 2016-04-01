@@ -1,57 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>UFMG INFORMÁTICA JÚNIOR</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UFMG INFORMÁTICA JÚNIOR</title>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <style type="text/css">
-${demo.css}
-        </style>
-        <script type="text/javascript">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style type="text/css">
+        ${demo.css}
+    </style>
+    <script type="text/javascript">
 
-var chart;
-$(document).ready(function () {
-    chart = new Highcharts.Chart({
-        chart: {
-            renderTo: 'Question12'
-        },
-        credits: {
-            enabled: false
-        },
-        legend: {
-            layout: 'horizontal',
-            verticalAlign: 'bottom'
-        },
-        title: {
-            text: 'Tenho liberdade de expressar minhas opiniões no que diz respeito ao andamento dos projetos da minha diretoria.'
-        },
+        var chart;
+        $(document).ready(function () {
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'Question12'
+                },
+                credits: {
+                    enabled: false
+                },
+                legend: {
+                    layout: 'horizontal',
+                    verticalAlign: 'bottom'
+                },
+                title: {
+                    text: 'Tenho liberdade de expressar minhas opiniões no que diz respeito ao andamento dos projetos da minha diretoria.'
+                },
 
-        xAxis: [{
-            title: {
-                text: 'Avaliações'
-            },
-            categories: ['Discordo Completamente', 'Discordo', 'Nem concordo nem discordo', 'Concordo', 'Concordo Completamente']
-        }],
-        yAxis: [{
-            title: {
-                text: 'Quantidade de Membros'
-            }            
-        }],
-        series: [{
-            data: [0, 0, 0, 7, 13],
-            name: 'Avaliações',
-            type: 'column'
-        }]
-    });
-});
+                xAxis: [{
+                    title: {
+                        text: 'Avaliações'
+                    },
+                    categories: ['Discordo Completamente', 'Discordo', 'Nem concordo nem discordo', 'Concordo', 'Concordo Completamente']
+                }],
+                yAxis: [{
+                    title: {
+                        text: 'Quantidade de Membros'
+                    }
+                }],
+                series: [{
+                    data: [0, 0, 0, 7, 13],
+                    name: 'Avaliações',
+                    type: 'column'
+                }]
+            });
+        });
 
-       </script>
-    </head>
-    <body>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    </script>
+</head>
+<body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-<div id="Question12" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-    </body>
+    <div id="Question12" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
 </html>

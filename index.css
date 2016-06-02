@@ -1,56 +1,75 @@
-@font-face {
-    font-family: Cambria;
-    src: url(fonts/cambria.ttf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Cambria;
-    src: url(fonts/cambria-bold.ttf);
-    font-weight: bold;
-}
-
-.card {
-	width: 1000px;
-	height: 480px;
-	margin: auto;
-	background-color: #ffffff;
-}
-
-body {
-	background-image: url(images/fundo.jpg);
-	font-family: Cambria;
+body{
+	background-color: #FFF8DC
 }
 
 h1 {
-	color: #ffffff;
-	font-size: 30px;
-	font-family: Cambria;
+	font-family: "Tahoma";
+    font-size: 35;
+    font-weight: 400;
+    color: #696969;
+    text-align: center;
+    margin: 2px;
+
 }
-
-header {
-	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 10px;
-
+h2{
+	font-family: "Tahoma";
+    font-size: 25;
+    font-weight: 400;
+    color: #808080;
+    text-align: center;
+    margin: 0px;
+}
+h3{
+    font-family: "Tahoma";
+    font-size: 15;
+    font-weight: 200;
+    color: #808080;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 footer {
-	width: 985px;
-	background-color: #ffffff;
-	margin: auto;
-	padding: 10px;
-	text-align: right;
+	font-family: "Tahoma";
+    font-size: 10;
+    font-weight: 200;
+    color: #999999;
+    text-align: right;
+    margin: 0px;
 }
 
-#imgLogo {
-	width: 300px;
-	margin-top: 10px;
+
+rect.borda {
+    stroke: #E6E6E6;
+    stroke-width:2px;   
 }
 
-/*#logo {
-	margin-top: 10px;
-	align: center;
-	float: left;
-	display: table;
-}*/
+
+#evasao{
+    margin: 0px;
+}
+#evasaoNorte {
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+#evasaoNordeste {
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+#evasaoCentroOeste {
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+#evasaoSudeste {
+    position: relative;
+    float: left;
+    margin: 0px;
+}
+#evasaoSul {
+    position: relative;
+    float: left;
+    margin: 0px;
+}

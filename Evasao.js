@@ -76,7 +76,7 @@ var heatmapChart = function(tsvFile, container) {
        });
  
     cards.transition().duration(1000)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];}else if(d.evasao<-100000){ return cor_ext[1];} else { return escalaCores(d.evasao);}});
+        .style("fill", function(d) {if(d.evasao > 100000){return cor_ext[0];}else if(d.evasao<-100000){ return cor_ext[1];} else { return escalaCores(d.evasao);}});
  
     cards.select("title").text(function(d) { return d.evasao; });
          
@@ -158,7 +158,7 @@ var firstHeatmapChart = function(tsvFile, container) {
         .attr("class", "nomeCurso borda")
         .attr("width", tamanhoGrid)
         .attr("height", tamanhoGrid)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}})
+        .style("fill", function(d) {if(d.evasao > 100000){return cor_ext[0];} else { return cores[0];}})
         .on("mouseover", function(d,i) {    
            div.transition()    
                .duration(200)    
@@ -174,7 +174,7 @@ var firstHeatmapChart = function(tsvFile, container) {
        });
  
     cards.transition().duration(1000)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return escalaCores(d.evasao);}});
+        .style("fill", function(d) {if(d.evasao > 100000){return cor_ext[0];} else { return escalaCores(d.evasao);}});
  
     cards.select("title").text(function(d) { return d.evasao; });
          

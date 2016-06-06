@@ -12,6 +12,9 @@ var cor_ext =["#FF4040","#4040F6"];
  
 var heatmapChart = function(tsvFile, container) {
   margem = { top: 20, right: 0, bottom: 50, left: 10 };
+  var div = d3.select(container).append("div")
+    .attr("class", "tooltip")      
+    .style("opacity", 0);
   //////////////////////////////////////
   //// PRÉ PROCESSAMENTO DOS DADOS ////
   ////////////////////////////////////
@@ -57,7 +60,20 @@ var heatmapChart = function(tsvFile, container) {
         .attr("class", "nomeCurso borda")
         .attr("width", tamanhoGrid)
         .attr("height", tamanhoGrid)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}});
+        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}})
+        .on("mouseover", function(d,i) {    
+           div.transition()    
+               .duration(200)    
+               .style("opacity", .9);    
+           div .html("<strong>Ano: "+anos[d.ano-1]+"<br/>"+"</strong>"+"<strong>Curso: "+cursos[d.nomeCurso-1]+"<br/>"+"</strong>"+"<strong>Evasão: "+d.evasao+"<br/>"+"</strong>")  
+               .style("left", ((d.ano) * tamanhoGrid)-40 + "px" )  
+               .style("top", ((d.nomeCurso - 1) * tamanhoGrid)-tamanhoGrid + 10 + "px" ) ;  
+           })          
+       .on("mouseout", function(d) {  
+           div.transition()    
+               .duration(500)    
+               .style("opacity", 0);
+       });
  
     cards.transition().duration(1000)
         .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];}else if(d.evasao<-100000){ return cor_ext[1];} else { return escalaCores(d.evasao);}});
@@ -70,6 +86,11 @@ var heatmapChart = function(tsvFile, container) {
 };
  
 var firstHeatmapChart = function(tsvFile, container) {
+ 
+  var div = d3.select(container).append("div")
+    .attr("class", "tooltip")      
+    .style("opacity", 0);
+ 
   //////////////////////////////////////
   //// PRÉ PROCESSAMENTO DOS DADOS ////
   ////////////////////////////////////
@@ -137,7 +158,20 @@ var firstHeatmapChart = function(tsvFile, container) {
         .attr("class", "nomeCurso borda")
         .attr("width", tamanhoGrid)
         .attr("height", tamanhoGrid)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}});
+        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}})
+        .on("mouseover", function(d,i) {    
+           div.transition()    
+               .duration(200)    
+               .style("opacity", .9);    
+           div .html("<strong>Ano: "+anos[d.ano-1]+"<br/>"+"</strong>"+"<strong>Curso: "+cursos[d.nomeCurso-1]+"<br/>"+"</strong>"+"<strong>Evasão: "+d.evasao+"<br/>"+"</strong>")  
+               .style("left", ((d.ano) * tamanhoGrid)+ 90  + "px")  
+               .style("top", ((d.nomeCurso - 1) * tamanhoGrid)-tamanhoGrid+10 + "px");  
+           })          
+       .on("mouseout", function(d) {  
+           div.transition()    
+               .duration(500)    
+               .style("opacity", 0);
+       });
  
     cards.transition().duration(1000)
         .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return escalaCores(d.evasao);}});

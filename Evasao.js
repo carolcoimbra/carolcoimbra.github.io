@@ -142,7 +142,7 @@ var firstHeatmapChart = function(tsvFile, container) {
         .attr("fill", "#696969")
  
     var escalaCores = d3.scale.quantile()
-        .domain([-65000, 65000])
+        .domain([-100000, 100000])
         .range(cores);
  
     var cards = svg.selectAll(".ano")
@@ -183,7 +183,7 @@ var firstHeatmapChart = function(tsvFile, container) {
 };
  
 var legendScale = function(container) {
-  var valores_referencia = ["< -100000","-65000","-48750","-32500","-16250","0","16250","32500","48750","65000", "> 200000","1"];
+  var valores_referencia = ["< -100000","-65000","-48750","-32500","-16250","0","16250","32500","48750","65000", "> 100000","1"];
   var sub_w = 60; //largura dos blocos da legenda
   var sub_h = 20; //altura
   largura = 800;

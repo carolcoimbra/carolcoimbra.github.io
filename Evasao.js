@@ -60,7 +60,7 @@ var heatmapChart = function(tsvFile, container) {
         .attr("class", "nomeCurso borda")
         .attr("width", tamanhoGrid)
         .attr("height", tamanhoGrid)
-        .style("fill", function(d) {if(d.evasao > 200000){return cor_ext[0];} else { return cores[0];}})
+        .style("fill", function(d) {if(d.evasao > 100000){return cor_ext[0];} else { return cores[0];}})
         .on("mouseover", function(d,i) {    
            div.transition()    
                .duration(200)    
@@ -183,7 +183,7 @@ var firstHeatmapChart = function(tsvFile, container) {
 };
  
 var legendScale = function(container) {
-  var valores_referencia = ["< -100000","-65000","-48750","-32500","-16250","0","16250","32500","48750","65000", "> 100000","1"];
+  var valores_referencia = ["< -100000","< -65000","< -48750","< -32500","< -16250","0","> 16250","> 32500","> 48750","> 65000", "> 100000","1"];
   var sub_w = 60; //largura dos blocos da legenda
   var sub_h = 20; //altura
   largura = 800;

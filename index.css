@@ -1,7 +1,8 @@
-body{
-	background-color: #F0F0F0;
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #F0F0F0;
+  color: #333;
 }
-
 h1 {
 	font-family: "Tahoma";
     font-size: 35;
@@ -31,57 +32,161 @@ h3{
 
 footer {
 	font-family: "Tahoma";
-    font-size: 10;
-    font-weight: 200;
-    color: #999999;
-    text-align: right;
-    margin: 0px;
+  font-size: 10;
+  font-weight: 200;
+  color: #999999;
+  text-align: right;
+  margin: 0px;
 }
 
-rect.borda {
-    stroke: #E6E6E6;
-    stroke-width:2px;   
+#buttons{
+	position:absolute;
+	top:410px;
+	left:60px; 
 }
 
+.state_contour {
+  fill: none;
+  stroke: none;
+  stroke-linejoin: round;
+  fill-opacity: 0.2;
+}
+
+.subunitNorte{
+    fill: #000000;
+}
+.subunitNordeste{
+    fill: #000000;
+}
+.subunitCentroOeste{
+    fill: #000000;
+}
+.subunitSudeste{
+    fill: #000000;
+}
+.subunitSul{
+    fill: #000000;
+}
+
+
+.hidden { 
+  display: none; 
+}
 div.tooltip {
     position: absolute;    
-    text-align: center;    
-    width: 90px;          
-    height: 60px;        
-    padding: 2px;      
-    font: 10px Tahoma;    
-    background: rgba(0, 0, 0, 0.8);
-    border: 0px;    
-    border-radius: 2px;    
-    pointer-events: none;    
-    color: #FFFFFF;   
+  text-align: center;    
+  width: 130px;          
+  height: 45px;        
+  padding: 2px;      
+  font: 10px Tahoma;    
+  background: rgba(0, 0, 0, 0.8);
+  border: 0px;    
+  border-radius: 2px;    
+  pointer-events: none;    
+  color: #FFFFFF;    
 }
 
-#evasao{
-    margin: 0px;
+#squareOne {    
+position:absolute;
+top:0px;
+left:10px;
+width:400px;
+height: 550px; 
 }
-#evasaoNorte {
-    position: relative;
-    float: left;
-    margin: 0px;
+#squareTwo {    
+position:absolute;
+top:100px;
+left:370px;
+width:400px;
+height: 320px;
 }
-#evasaoNordeste {
-    position: relative;
-    float: left;
-    margin: 0px;
+#squareThree {    
+position:absolute;
+top:440px;
+left:410px;
+width:270px;
+height: 270px;
 }
-#evasaoCentroOeste {
-    position: relative;
-    float: left;
-    margin: 0px;
+#squareFour {    
+position:absolute;
+top:460px;
+left:690px;
+width:300px;
+height: 300px;
 }
-#evasaoSudeste {
-    position: relative;
-    float: left;
-    margin: 0px;
+#squareFive {    
+position:absolute;
+top:470px;
+left:10px;
+width:380px;
+height: 280px;
 }
-#evasaoSul {
-    position: relative;
-    float: left;
-    margin: 0px;
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px; 
+  color: white;
+}
+
+.widget {
+  display: inline-block;
+  border: 1px solid #AAA;
+  background: white;
+}
+
+#chart {
+  height: 400px;
+  width: 500px;
+}
+
+svg {
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.value {
+  font-size: 9px;
+  font-weight: 300;
+  fill: black;
+}
+
+.label {
+  font-size: 12px;
+  fill: #333;
+}
+
+.axis {
+  path {
+    fill: none;
+    //stroke: #333;
+  }
+  .tick line {
+    stroke-width: 1;
+    stroke: red;
+	 fill: black;
+  };
+ 
+  font-size: 8px;
+}
+
+.slice {
+   font-size: 12pt;
+   font-family: Verdana;
+   fill: black; //svg specific - instead of color
+   font-weight: bold;	
+  		} 
+.title {
+	 font-family: Verdana;
+    font-size: 12px;	
+		
+}
+.legend {
+	font-size: 8pt;
+   font-family: Verdana;
+	
 }

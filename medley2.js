@@ -1,5 +1,5 @@
-	var width = 380,
-        height = 280;
+	var width = 200,
+        height = 200;
 
     var expScale = d3.scale.linear().range([5, 100]);
     var color = ["#2CA02C", "#AEC7E8", "#FF7F0E", "#FFBB78", "#1F77B4", "#98DF8A", "#D62728", "#FF9896", "#E57C7D", "#4AC2B6", "#9467BD", "#C5B0D5", "#8C564B", "#C49C94", "#E377C2", "#F7B6D2", "#7F7F7F", "#C7C7C7", "#BCBD22", "#DBDB8D", "#17BECF"];
@@ -10,9 +10,9 @@
 	var cloud_bases_de_dados2012 = ["Norte2012.tsv", "Nordeste2012.tsv" , "CenOeste2012.tsv" ,"Sudeste2012.tsv" ,"Sul2012.tsv"];
 	var cloud_bases_de_dados2013 = ["Norte2013.tsv", "Nordeste2013.tsv" , "CenOeste2013.tsv" ,"Sudeste2013.tsv" ,"Sul2013.tsv"];
 	
-	reload_words(0,0);
+	reload_words2(0,0);
  
-	function reload_words(idYear, reg){	
+	function reload_words2(idYear, reg){	
 
     var database = [];
 	if(idYear == 0){
@@ -58,18 +58,18 @@
 
   function draw(words) {
 	  
-	d3.select("#squareFive").remove();
+	d3.select("#squareFive2").remove();
 		
 	var div = document.createElement("div");
-	div.id = "squareFive";
+	div.id = "squareFive2";
 
 	document.body.appendChild(div);
 	  
-    d3.select("#squareFive").append("svg")
+    d3.select("#squareFive2").append("svg")
         .attr("width", width)
         .attr("height", height)
       .append("g")
-        .attr("transform", "translate("+(width/2)+","+(height/2)+")")
+        .attr("transform", "translate("+(width)+","+(height)+")")
       .selectAll("text")
         .data(words)
       .enter().append("text")

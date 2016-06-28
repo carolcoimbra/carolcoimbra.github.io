@@ -1,17 +1,17 @@
-category	measure					
-General administration	  289777498.10 						
-Hospital and outpatient care	  60891351.60 						
-Scientific development	  12255601.92 						
-Dissemination of scientific knowledge	  1229204.70 						
-Individual and collective rights	  3819046.04 						
-Basic education	  67492194.19 						
-Adult education	  798245.81 						
-Special education	  2159045.71 						
-Child education	  10075684.66 						
-Elementary school	  918380.07 						
-High school	  271402.63 						
-Professionalizing education	  8359953.16 						
-College education	  85939485.54 						
-Human resource development	  22163782.92 						
-Information technology	  819375.00 						
-Funds transfer for basic education	  438612620.03 						
+Year	ID	Region	Subfunction	Total
+2010	12	South	General administration	289777498.10
+2010	14	South	Hospital and outpatient care	60891351.60
+2010	23	South	Scientific development	12255601.92
+2010	8	South	Dissemination of scientific knowledge	1229204.70
+2010	16	South	Individual and collective rights	3819046.04
+2010	3	South	Basic education	67492194.19
+2010	1	South	Adult education	798245.81
+2010	25	South	Special education	2159045.71
+2010	5	South	Child education	10075684.66
+2010	9	South	Elementary school	918380.07
+2010	13	South	High school	271402.63
+2010	20	South	Professionalizing education	8359953.16
+2010	6	South	College education	85939485.54
+2010	15	South	Human resource development	22163782.92
+2010	17	South	Information technology	819375.00
+2010	11	South	Funds transfer for basic education	438612620.03

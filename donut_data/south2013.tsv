@@ -1,10 +1,10 @@
-category	measure						
-General administration	  249966979.89 						
-Hospital and outpatient care	  59335299.05 						
-Scientific development	  311060.78 						
-Basic education	  77359761.72 						
-Elementary school	  267455.93 						
-Professionalizing education	  201170134.77 						
-College education	  200217914.59 						
-Human resource development	  5310436.59 						
-Funds transfer for basic education	  4399735.02 						
+Year	ID	Region	Subfunction	Total
+2013	12	South	General administration	249966979.89
+2013	14	South	Hospital and outpatient care	59335299.05
+2013	23	South	Scientific development	311060.78
+2013	3	South	Basic education	77359761.72
+2013	9	South	Elementary school	267455.93
+2013	20	South	Professionalizing education	201170134.77
+2013	6	South	College education	200217914.59
+2013	15	South	Human resource development	5310436.59
+2013	11	South	Funds transfer for basic education	4399735.02

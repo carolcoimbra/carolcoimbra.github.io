@@ -1,6 +1,6 @@
-category	measure						
-Hospital and outpatient care	  4702560.00 						
-Scientific development	  5584856.46 						
-Basic education	  17757778.20 						
-College education	  76295474.92 						
-Human resource development	  998077.54 						
+Year	ID	Region	Subfunction	Total
+2012	14	Northeast	Hospital and outpatient care	4702560.00
+2012	23	Northeast	Scientific development	5584856.46
+2012	3	Northeast	Basic education	17757778.20
+2012	6	Northeast	College education	76295474.92
+2012	15	Northeast	Human resource development	998077.54

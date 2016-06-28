@@ -1,13 +1,13 @@
-category	measure						
-Scientific development	  252681.08 						
-Basic education	  15167444.25 						
-Adult education	  320646.50 						
-Special education	  1659272.24 						
-Child education	  2512918.02 						
-Elementary school	  998876.34 						
-High school	  480000.00 						
-Professionalizing education	  116479319.92 						
-College education	  7200807.06 						
-Human resource development	  7646479.56 						
-Information technology	  1460528.00 						
-Funds transfer for basic education	  215980081.29 						
+Year	ID	Region	Subfunction	Total
+2009	23	North	Scientific development	252681.08
+2009	3	North	Basic education	15167444.25
+2009	1	North	Adult education	320646.50
+2009	25	North	Special education	1659272.24
+2009	5	North	Child education	2512918.02
+2009	9	North	Elementary school	998876.34
+2009	13	North	High school	480000.00
+2009	20	North	Professionalizing education	116479319.92
+2009	6	North	College education	7200807.06
+2009	15	North	Human resource development	7646479.56
+2009	17	North	Information technology	1460528.00
+2009	11	North	Funds transfer for basic education	215980081.29

@@ -1,16 +1,16 @@
-category	measure						
-General administration	  306344589.36 						
-Hospital and outpatient care	  171000.00 						
-Basic assistance	  1015992.43 						
-Scientific development	  1087128.56 						
-Individual and collective rights	  1512977.86 						
-Basic education	  41275441.12 						
-Adult education	  799836.64 						
-Child education	  14309705.66 						
-Elementary school	  1704316.57 						
-High school	  480000.00 						
-Professionalizing education	  3527274.74 						
-College education	  15970135.82 						
-Human resource development	  5829685.53 						
-Information technology	  1049959.70 						
-Funds transfer for basic education	  298007205.18 						
+Year	ID	Region	Subfunction	Total
+2010	12	Midwest	General administration	306344589.36
+2010	14	Midwest	Hospital and outpatient care	171000.00
+2010	2	Midwest	Basic assistance	1015992.43
+2010	23	Midwest	Scientific development	1087128.56
+2010	16	Midwest	Individual and collective rights	1512977.86
+2010	3	Midwest	Basic education	41275441.12
+2010	1	Midwest	Adult education	799836.64
+2010	5	Midwest	Child education	14309705.66
+2010	9	Midwest	Elementary school	1704316.57
+2010	13	Midwest	High school	480000.00
+2010	20	Midwest	Professionalizing education	3527274.74
+2010	6	Midwest	College education	15970135.82
+2010	15	Midwest	Human resource development	5829685.53
+2010	17	Midwest	Information technology	1049959.70
+2010	11	Midwest	Funds transfer for basic education	298007205.18

@@ -1,14 +1,14 @@
-category	measure						
-General administration	  257316719.37 						
-Hospital and outpatient care	  39548886.79 						
-Social communication	  4950000.00 						
-Scientific development	  15007078.80 						
-Engineering and technological development	  5000000.00 						
-Dissemination of scientific knowledge	  18000000.00 						
-2Basic education	  62589696.14 						
-Professionalizing education	  153681546.83 						
-College education	  177441368.36 						
-Human resource development	  1123456.42 						
-Planning and budgeting	  6000000.00 						
-Information technology	  155358589.30 						
-Funds transfer for basic education	  6393120.00 						
+Year	ID	Region	Subfunction	Total
+2013	12	Midwest	General administration	257316719.37
+2013	14	Midwest	Hospital and outpatient care	39548886.79
+2013	24	Midwest	Social communication	4950000.00
+2013	23	Midwest	Scientific development	15007078.80
+2013	10	Midwest	Engineering and technological development	5000000.00
+2013	8	Midwest	Dissemination of scientific knowledge	18000000.00
+2013	3	Midwest	Basic education	62589696.14
+2013	20	Midwest	Professionalizing education	153681546.83
+2013	6	Midwest	College education	177441368.36
+2013	15	Midwest	Human resource development	1123456.42
+2013	19	Midwest	Planning and budgeting	6000000.00
+2013	17	Midwest	Information technology	155358589.30
+2013	11	Midwest	Funds transfer for basic education	6393120.00

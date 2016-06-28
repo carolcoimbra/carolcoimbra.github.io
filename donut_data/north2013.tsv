@@ -1,9 +1,9 @@
-category	measure						
-General administration	  105156748.01 						
-Hospital and outpatient care	  8738192.48 						
-Scientific development	  581547.59 						
-Basic education	  12601985.56 						
-Elementary school	  126968.41 						
-Professionalizing education	  94847745.73 						
-College education	  36026008.38 						
-Human resource development	  221320.00 						
+Year	ID	Region	Subfunction	Total
+2013	12	North	General administration	105156748.01
+2013	14	North	Hospital and outpatient care	8738192.48
+2013	23	North	Scientific development	581547.59
+2013	3	North	Basic education	12601985.56
+2013	9	North	Elementary school	126968.41
+2013	20	North	Professionalizing education	94847745.73
+2013	6	North	College education	36026008.38
+2013	15	North	Human resource development	221320.00

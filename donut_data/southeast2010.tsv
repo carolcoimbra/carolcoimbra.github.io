@@ -1,17 +1,17 @@
-category	measure						
-General administration	  1486546160.42 						
-Hospital and outpatient care	  13739643.34 						
-Scientific development	  27128872.75 						
-Dissemination of scientific knowledge	  2073044.80 						
-Individual and collective rights	  2993230.81 						
-Basic education	  75211035.02 						
-Adult education	  3130171.50 						
-Special education	  1928639.81 						
-Child education	  18135417.31 						
-Elementary school	  2021589.31 						
-High school	  479805.00 						
-Professionalizing education	  137335828.16 						
-College education	  276955907.33 						
-Human resource development	  33987809.57 						
-Information technology	  1329476.60 						
-Funds transfer for basic education	  355932853.44 						
+Year	ID	Region	Subfunction	Total
+2010	12	Southeast	General administration	1486546160.42
+2010	14	Southeast	Hospital and outpatient care	13739643.34
+2010	23	Southeast	Scientific development	27128872.75
+2010	8	Southeast	Dissemination of scientific knowledge	2073044.80
+2010	16	Southeast	Individual and collective rights	2993230.81
+2010	3	Southeast	Basic education	75211035.02
+2010	1	Southeast	Adult education	3130171.50
+2010	25	Southeast	Special education	1928639.81
+2010	5	Southeast	Child education	18135417.31
+2010	9	Southeast	Elementary school	2021589.31
+2010	13	Southeast	High school	479805.00
+2010	20	Southeast	Professionalizing education	137335828.16
+2010	6	Southeast	College education	276955907.33
+2010	15	Southeast	Human resource development	33987809.57
+2010	17	Southeast	Information technology	1329476.60
+2010	11	Southeast	Funds transfer for basic education	355932853.44

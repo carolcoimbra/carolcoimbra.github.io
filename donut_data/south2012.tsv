@@ -1,7 +1,7 @@
-category	measure						
-Hospital and outpatient care	  22285836.66 						
-Scientific development	  10586016.10 						
-Basic education	  38597259.27 						
-Professionalizing education	  3150067.26 						
-College education	  196277385.55 						
-Human resource development	  255060.35 						
+Year	ID	Region	Subfunction	Total
+2012	14	South	Hospital and outpatient care	22285836.66
+2012	23	South	Scientific development	10586016.10
+2012	3	South	Basic education	38597259.27
+2012	20	South	Professionalizing education	3150067.26
+2012	6	South	College education	196277385.55
+2012	15	South	Human resource development	255060.35

@@ -1,20 +1,18 @@
 var Year = [2009, 2010, 2011, 2012, 2013];
-var idYear = 0;
+var idYear2 = 0;
 var global_reg = 0;
 
-// Define map size on screen 
 var width = 400,
     height = 400;
 
-var tooltip = d3.select("#squareOne").append("div").attr("class", "tooltip hidden");
+var tooltip = d3.select("#squareOne2").append("div").attr("class", "tooltip hidden");
 
-var svg = d3.select("#squareOne").append("svg")
+var svg = d3.select("#squareOne2").append("svg")
     .attr("width", width)
     .attr("height", height);
 
 var g = svg.append("g");
 
-// Align center of Brazil to center of map
 var projection = d3.geo.mercator()
   .scale(350)
   .center([-52, -15])
@@ -23,7 +21,6 @@ var projection = d3.geo.mercator()
 var path = d3.geo.path()
   .projection(projection);
 
-// Load data (asynchronously)
 d3_queue.queue()
     .defer(d3.json, "./br_states.json")
     .await(ready);
@@ -31,54 +28,52 @@ d3_queue.queue()
 function ready(error, shp) {
   if (error) throw error;
 
-  // Extracting polygons and contours
   var states = topojson.feature(shp, shp.objects.estados);
   var states_contour = topojson.mesh(shp, shp.objects.estados);
   var subunitChecked = 0;
   var colorsChecked = ["#29A03C", "#D2282B", "#FF800A", "#9562BE", "#2978B3"];
 
-  // Draw states
-  g.selectAll(".estado")
+    g.selectAll(".estado")
       .data(states.features)
       .enter()
       .append("path")
-      .attr("class", function(d) { //POR ENQUANTO ISSO É INÚTIL PORQUE AS CORES SÃO AS MESMAS
+      .attr("class", function(d) { 
         if (d.id == 'AC' || d.id == 'AM' || d.id == 'AP'|| d.id == 'PA' || d.id == 'RO' || d.id == 'RR' || d.id == 'TO') {
-          return "subunitNorte";
+          return "subunitNorte2";
         } 
         else if (d.id == 'AL' || d.id == 'BA' || d.id == 'CE' || d.id == 'MA' || d.id == 'PB' || d.id == 'PE' || d.id == 'PI'|| d.id == 'RN'|| d.id == 'SE') {
-          return "subunitNordeste";
+          return "subunitNordeste2";
         }
         else if (d.id == 'DF' || d.id == 'GO' || d.id == 'MS' || d.id == 'MT') {
-          return "subunitCentroOeste";
+          return "subunitCentroOeste2";
         }
         else if (d.id == 'ES' || d.id == 'MG' || d.id == 'RJ'|| d.id == 'SP') {
-          return "subunitSudeste";
+          return "subunitSudeste2";
         }
         else if (d.id == 'PR' || d.id == 'RS' || d.id == 'SC') {
-          return "subunitSul";
+          return "subunitSul2";
         }})
       
 	  .style("opacity", function(d) {
         if (d.id == 'AC' || d.id == 'AM' || d.id == 'AP'|| d.id == 'PA' || d.id == 'RO' || d.id == 'RR' || d.id == 'TO') {
           //transfer (YEAR, 'Norte');
-          return 0.2+transferNorte[idYear]/transferSum[idYear];
+          return 0.2+transferNorte[idYear2]/transferSum[idYear2];
         } 
         else if (d.id == 'AL' || d.id == 'BA' || d.id == 'CE' || d.id == 'MA' || d.id == 'PB' || d.id == 'PE' || d.id == 'PI'|| d.id == 'RN'|| d.id == 'SE') {
           //transfer (YEAR, 'Nordeste');
-          return 0.2+transferNordeste[idYear]/transferSum[idYear];
+          return 0.2+transferNordeste[idYear2]/transferSum[idYear2];
         }
         else if (d.id == 'DF' || d.id == 'GO' || d.id == 'MS' || d.id == 'MT') {
           //transfer (YEAR, 'Centro-Oeste');
-          return 0.2+transferCentroOeste[idYear]/transferSum[idYear];
+          return 0.2+transferCentroOeste[idYear2]/transferSum[idYear2];
         }
         else if (d.id == 'ES' || d.id == 'MG' || d.id == 'RJ'|| d.id == 'SP') {
           //transfer (YEAR, 'Sudeste');
-          return 0.2+transferSudeste[idYear]/transferSum[idYear];
+          return 0.2+transferSudeste[idYear2]/transferSum[idYear2];
         }
         else if (d.id == 'PR' || d.id == 'RS' || d.id == 'SC') {
           //transfer (YEAR, 'Sul');
-          return 0.2+transferSul[idYear]/transferSum[idYear];
+          return 0.2+transferSul[idYear2]/transferSum[idYear2];
         }})
       
 	   .on("mouseover", function(d,i) {
@@ -87,29 +82,29 @@ function ready(error, shp) {
 			var transfer;
 			if (d.id == 'AC' || d.id == 'AM' || d.id == 'AP'|| d.id == 'PA' || d.id == 'RO' || d.id == 'RR' || d.id == 'TO') {
 				subunitOver = "North";
-				transfer = transferNorteSubtitle[idYear];
+				transfer = transferNorteSubtitle[idYear2];
 			} 
 			else if (d.id == 'AL' || d.id == 'BA' || d.id == 'CE' || d.id == 'MA' || d.id == 'PB' || d.id == 'PE' || d.id == 'PI'|| d.id == 'RN'|| d.id == 'SE') {
 				subunitOver = "Northeast";
-				transfer = transferNordesteSubtitle[idYear];
+				transfer = transferNordesteSubtitle[idYear2];
 			}
 			else if (d.id == 'DF' || d.id == 'GO' || d.id == 'MS' || d.id == 'MT') {
 				subunitOver =  "Midwest";
-				transfer = transferCentroOesteSubtitle[idYear];
+				transfer = transferCentroOesteSubtitle[idYear2];
 			}
 			else if (d.id == 'ES' || d.id == 'MG' || d.id == 'RJ'|| d.id == 'SP') {
 				subunitOver = "Southeast";
-				transfer = transferSudesteSubtitle[idYear];
+				transfer = transferSudesteSubtitle[idYear2];
 			}
 			else if (d.id == 'PR' || d.id == 'RS' || d.id == 'SC') {
 				subunitOver = "South";
-				transfer = transferSulSubtitle[idYear];
+				transfer = transferSulSubtitle[idYear2];
 			}
       
 		tooltip
 			.classed("hidden", false)
-			.attr("style", "left:"+(d3.event.pageX - 80)+"px;top:"+(d3.event.pageY - 100)+"px")
-			.html("<strong>Year: "+Year[idYear]+"<br/>"+"</strong>"+"<strong>Subunit: "+subunitOver+"<br/>"+"</strong>"+"<strong>Transfer: R$"+transfer+"<br/>"+"</strong>")
+			.attr("style", "left:"+(d3.event.pageX - 700)+"px;top:"+(d3.event.pageY - 100)+"px")
+			.html("<strong>Year: "+Year[idYear2]+"<br/>"+"</strong>"+"<strong>Subunit: "+subunitOver+"<br/>"+"</strong>"+"<strong>Transfer: R$"+transfer+"<br/>"+"</strong>")
 		})
 		.on("mouseout",  function(d,i) {
 			tooltip.classed("hidden", true)
@@ -117,105 +112,101 @@ function ready(error, shp) {
 		.on("click", function(d){
 			if (d.id == 'AC' || d.id == 'AM' || d.id == 'AP'|| d.id == 'PA' || d.id == 'RO' || d.id == 'RR' || d.id == 'TO') {
 				if (subunitChecked == 1){
-					d3.selectAll(".subunitNorte").style("fill", "#000000");
-					d3.selectAll(".subunitNordeste").style("fill", "#000000");
-					d3.selectAll(".subunitCentroOeste").style("fill", "#000000");
-					d3.selectAll(".subunitSudeste").style("fill", "#000000");
-					d3.selectAll(".subunitSul").style("fill", "#000000");
+					d3.selectAll(".subunitNorte2").style("fill", "#000000");
+					d3.selectAll(".subunitNordeste2").style("fill", "#000000");
+					d3.selectAll(".subunitCentroOeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSudeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSul2").style("fill", "#000000");
 				}
-					d3.selectAll(".subunitNorte").style("fill", colorsChecked[0]);
+					d3.selectAll(".subunitNorte2").style("fill", colorsChecked[0]);
 					subunitChecked = 1;
-					reload_bars(idYear,0);
-					reload_donut(idYear,0);
-					reload_words(idYear, 0);
-					global_reg = 0;
-					//ano, norte			
+					reload_bars2(idYear2,0);
+					reload_donut2(idYear2,0);
+					reload_words2(idYear2, 0);
+					global_reg = 0;			
 				}
 			else if (d.id == 'AL' || d.id == 'BA' || d.id == 'CE' || d.id == 'MA' || d.id == 'PB' || d.id == 'PE' || d.id == 'PI'|| d.id == 'RN'|| d.id == 'SE') {
 				if (subunitChecked == 1){
-					d3.selectAll(".subunitNorte").style("fill", "#000000");
-					d3.selectAll(".subunitNordeste").style("fill", "#000000");
-					d3.selectAll(".subunitCentroOeste").style("fill", "#000000");
-					d3.selectAll(".subunitSudeste").style("fill", "#000000");
-					d3.selectAll(".subunitSul").style("fill", "#000000");
+					d3.selectAll(".subunitNorte2").style("fill", "#000000");
+					d3.selectAll(".subunitNordeste2").style("fill", "#000000");
+					d3.selectAll(".subunitCentroOeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSudeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSul2").style("fill", "#000000");
 				}
-				d3.selectAll(".subunitNordeste").style("fill", colorsChecked[1]);
+				d3.selectAll(".subunitNordeste2").style("fill", colorsChecked[1]);
 					subunitChecked = 1;
-					reload_bars(idYear,1);
-					reload_donut(idYear,1);
-					reload_words(idYear, 1);
+					reload_bars2(idYear2,1);
+					reload_donut2(idYear2,1);
+					reload_words2(idYear2, 1);
 					global_reg = 1;
 				}
 			else if (d.id == 'DF' || d.id == 'GO' || d.id == 'MS' || d.id == 'MT') {
 				if (subunitChecked == 1){
-					d3.selectAll(".subunitNorte").style("fill", "#000000");
-					d3.selectAll(".subunitNordeste").style("fill", "#000000");
-					d3.selectAll(".subunitCentroOeste").style("fill", "#000000");
-					d3.selectAll(".subunitSudeste").style("fill", "#000000");
-					d3.selectAll(".subunitSul").style("fill", "#000000");
+					d3.selectAll(".subunitNorte2").style("fill", "#000000");
+					d3.selectAll(".subunitNordeste2").style("fill", "#000000");
+					d3.selectAll(".subunitCentroOeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSudeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSul2").style("fill", "#000000");
 				}
-					d3.selectAll(".subunitCentroOeste").style("fill", colorsChecked[2]);
+					d3.selectAll(".subunitCentroOeste2").style("fill", colorsChecked[2]);
 					subunitChecked = 1;
-					reload_bars(idYear,2);
-					reload_donut(idYear,2);
-					reload_words(idYear, 2);
+					reload_bars2(idYear2,2);
+					reload_donut2(idYear2,2);
+					reload_words2(idYear2, 2);
 					global_reg = 2;
 				}
 			else if (d.id == 'ES' || d.id == 'MG' || d.id == 'RJ'|| d.id == 'SP') {
 				if (subunitChecked == 1){
-					d3.selectAll(".subunitNorte").style("fill", "#000000");
-					d3.selectAll(".subunitNordeste").style("fill", "#000000");
-					d3.selectAll(".subunitCentroOeste").style("fill", "#000000");
-					d3.selectAll(".subunitSudeste").style("fill", "#000000");
-					d3.selectAll(".subunitSul").style("fill", "#000000");
+					d3.selectAll(".subunitNorte2").style("fill", "#000000");
+					d3.selectAll(".subunitNordeste2").style("fill", "#000000");
+					d3.selectAll(".subunitCentroOeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSudeste2").style("fill", "#000000");
+					d3.selectAll(".subunitSul2").style("fill", "#000000");
 				}
-					d3.selectAll(".subunitSudeste").style("fill", colorsChecked[3]);
+					d3.selectAll(".subunitSudeste2").style("fill", colorsChecked[3]);
 					subunitChecked = 1;
-					reload_bars(idYear,3);
-					reload_donut(idYear,3);
-					reload_words(idYear, 3);
+					reload_bars2(idYear2,3);
+					reload_donut2(idYear2,3);
+					reload_words2(idYear2, 3);
 					global_reg = 3;
 			}
 			else if (d.id == 'PR' || d.id == 'RS' || d.id == 'SC') {
 				if (subunitChecked == 1){
-				  d3.selectAll(".subunitNorte").style("fill", "#000000");
-				  d3.selectAll(".subunitNordeste").style("fill", "#000000");
-				  d3.selectAll(".subunitCentroOeste").style("fill", "#000000");
-				  d3.selectAll(".subunitSudeste").style("fill", "#000000");
-				  d3.selectAll(".subunitSul").style("fill", "#000000");
+				  d3.selectAll(".subunitNorte2").style("fill", "#000000");
+				  d3.selectAll(".subunitNordeste2").style("fill", "#000000");
+				  d3.selectAll(".subunitCentroOeste2").style("fill", "#000000");
+				  d3.selectAll(".subunitSudeste2").style("fill", "#000000");
+				  d3.selectAll(".subunitSul2").style("fill", "#000000");
 				}
-				d3.selectAll(".subunitSul").style("fill", colorsChecked[4]);
+				d3.selectAll(".subunitSul2").style("fill", colorsChecked[4]);
 				subunitChecked = 1;
-				reload_bars(idYear,4);
-				reload_donut(idYear,4);
-				reload_words(idYear, 4);
+				reload_bars2(idYear2,4);
+				reload_donut2(idYear2,4);
+				reload_words2(idYear2, 4);
 				global_reg = 4;
 			}})
 		.attr("d", path);
 
-		//Draw state contour
 		g.append("path")
 		.datum(states_contour)
 		.attr("d", path)
 		.attr("class", "state_contour");
 		
-
-		//ofsets plus width/height of transform, plsu 20 px of padding, plus 20 extra for tooltip offset off mouse
-		var offsetL = document.getElementById('#squareOne').offsetLeft+(width/2);
-		var offsetT =document.getElementById('#squareOne').offsetTop+(height/2);
+		var offsetL = document.getElementById('#squareOne2').offsetLeft+(width/2);
+		var offsetT =document.getElementById('#squareOne2').offsetTop+(height/2);
 }
 
 
-function setYear(id){
-  idYear = id;
-  reload_bars(idYear,global_reg);
-  reload_donut(idYear,global_reg);
-  reload_words(idYear, global_reg);
-  d3.selectAll(".subunitSul").style("opacity", function(){return 0.2+transferSul[idYear]/transferSum[idYear];});
-  d3.selectAll(".subunitSudeste").style("opacity", function(){return 0.2+transferSudeste[idYear]/transferSum[idYear];});
-  d3.selectAll(".subunitNorte").style("opacity", function(){return 0.2+transferNorte[idYear]/transferSum[idYear];});
-  d3.selectAll(".subunitNordeste").style("opacity", function(){return 0.2+transferNordeste[idYear]/transferSum[idYear];});
-  d3.selectAll(".subunitCentroOeste").style("opacity", function(){return 0.2+transferCentroOeste[idYear]/transferSum[idYear];});  
+function setYear2(id){
+  idYear2 = id;
+  reload_bars2(idYear2,global_reg);
+  reload_donut2(idYear2,global_reg);
+  reload_words2(idYear2, global_reg);
+  d3.selectAll(".subunitSul2").style("opacity", function(){return 0.2+transferSul[idYear2]/transferSum[idYear2];});
+  d3.selectAll(".subunitSudeste2").style("opacity", function(){return 0.2+transferSudeste[idYear2]/transferSum[idYear2];});
+  d3.selectAll(".subunitNorte2").style("opacity", function(){return 0.2+transferNorte[idYear2]/transferSum[idYear2];});
+  d3.selectAll(".subunitNordeste2").style("opacity", function(){return 0.2+transferNordeste[idYear2]/transferSum[idYear2];});
+  d3.selectAll(".subunitCentroOeste2").style("opacity", function(){return 0.2+transferCentroOeste[idYear2]/transferSum[idYear2];});  
  
 }
 

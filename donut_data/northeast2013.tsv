@@ -1,11 +1,11 @@
-category	measure						
-General administration	  456332698.04 						
-Hospital and outpatient care	  50547852.85 						
-Basic assistance	  705789.00 						
-Scientific development	  2564513.50 						
-Basic education	  86325036.45 						
-Adult education	  1936046.36 						
-Elementary school	  387034.42 						
-Professionalizing education	  403079881.11 						
-College education	  151592996.63 						
-Human resource development	  9358611.38 						
+Year	ID	Region	Subfunction	Total
+2013	12	Northeast	General administration	456332698.04
+2013	14	Northeast	Hospital and outpatient care	50547852.85
+2013	2	Northeast	Basic assistance	705789.00
+2013	23	Northeast	Scientific development	2564513.50
+2013	3	Northeast	Basic education	86325036.45
+2013	1	Northeast	Adult education	1936046.36
+2013	9	Northeast	Elementary school	387034.42
+2013	20	Northeast	Professionalizing education	403079881.11
+2013	6	Northeast	College education	151592996.63
+2013	15	Northeast	Human resource development	9358611.38

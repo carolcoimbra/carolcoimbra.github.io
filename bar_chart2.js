@@ -4,9 +4,9 @@
 	var bar_bases_de_dados2012 = ["bar_data/Norte2012.tsv", "bar_data/Nordeste2012.tsv" , "bar_data/CentOeste2012.tsv" ,"bar_data/Sudeste2012.tsv" ,"bar_data/Sul2012.tsv"];
 	var bar_bases_de_dados2013 = ["bar_data/Norte2013.tsv", "bar_data/Nordeste2013.tsv" , "bar_data/CentOeste2013.tsv" ,"bar_data/Sudeste2013.tsv" ,"bar_data/Sul2013.tsv"];
 
-	reload_bars(0,0);
+	reload_bars2(0,0);
 	
-    function reload_bars(idYear, reg) {
+    function reload_bars2(idYear, reg) {
 		var database = [];
 		var colors = ["#29A03C", "#D2282B", "#FF800A", "#9562BE", "#2978B3"];
 		var color_aux = 0;
@@ -27,10 +27,10 @@
 			database = bar_bases_de_dados2010[reg];	
 		}
 	
-		d3.select("#squareFour").remove();
+		d3.select("#squareFour2").remove();
 		
 		var div = document.createElement("div");
-		div.id = "squareFour";
+		div.id = "squareFour2";
 
 		document.body.appendChild(div);
 	
@@ -39,7 +39,7 @@
             callbackError = error;
             callbackData = data;		
 			
-		var chart = document.getElementById("squareFour"),
+		var chart = document.getElementById("squareFour2"),
 			axisMargin = 20,
 			margin = 20,
 			valueMargin = 4,

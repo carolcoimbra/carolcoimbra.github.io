@@ -1,10 +1,10 @@
-category	measure						
-Basic education	  53731664.55 						
-Special education	  1074928.22 						
-Child education	  4153713.09 						
-Elementary school	  13256715.45 						
-High school	  1294890.91 						
-Professionalizing education	  3553031.43 						
-College education	  715276.58 						
-Information technology	  1741828.75 						
-Funds transfer for basic education	  66858079.83 						
+Year	ID	Region	Subfunction	Total
+2011	3	North	Basic education	53731664.55
+2011	25	North	Special education	1074928.22
+2011	5	North	Child education	4153713.09
+2011	9	North	Elementary school	13256715.45
+2011	13	North	High school	1294890.91
+2011	20	North	Professionalizing education	3553031.43
+2011	6	North	College education	715276.58
+2011	17	North	Information technology	1741828.75
+2011	11	North	Funds transfer for basic education	66858079.83

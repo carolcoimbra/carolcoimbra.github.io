@@ -5,34 +5,43 @@ body {
 }
 h1 {
 	font-family: "Tahoma";
-    font-size: 35;
-    font-weight: 400;
-    color: #696969;
-    text-align: center;
-    margin: 2px;
+  font-size: 35;
+  font-weight: 400;
+  color: #696969;
+  text-align: center;
+  margin: 2px;
 
 }
 h2{
 	font-family: "Tahoma";
-    font-size: 25;
-    font-weight: 400;
-    color: #808080;
-    text-align: center;
-    margin: 0px;
+  font-size: 25;
+  font-weight: 400;
+  color: #808080;
+  text-align: center;
+  margin: 0px;
 }
 h3{
-    font-family: "Tahoma";
-    font-size: 15;
-    font-weight: 200;
-    color: #808080;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0px;
+  font-family: "Tahoma";
+  font-size: 15;
+  font-weight: 200;
+  color: #808080;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+h4 {
+  font-family: Tahoma;
+  font-size: 5;  
+  font-weight: 200; 
+  text-align: center; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #808080;  
 }
 
 footer {
 	font-family: "Tahoma";
-  font-size: 10;
+  font-size: 8;
   font-weight: 200;
   color: #999999;
   text-align: right;
@@ -42,9 +51,14 @@ footer {
 #buttons{
 	position:absolute;
 	top:410px;
-	left:400px; 
+	left:20px; 
 }
 
+#buttons2{
+  position:absolute;
+  top:410px;
+  left:700px; 
+}
 
 rect.contour {
     stroke: #E6E6E6;
@@ -68,16 +82,15 @@ div.tooltipEvasion {
 #names{
 	position:absolute;
 	float: middle;
-	top:1000px;
-	left:85%;
+	top:1120px;
+	left:82%;
 }
 
 #evasion{
 	position:absolute;
-	float:left;
+	float:center;
   margin: 0px;
 	top: 800px;
-	left:50px
 }
 #schoolLevel {
     position: relative;
@@ -133,6 +146,21 @@ div.tooltipEvasion {
     fill: #000000;
 }
 
+.subunitNorte2{
+    fill: #000000;
+}
+.subunitNordeste2{
+    fill: #000000;
+}
+.subunitCentroOeste2{
+    fill: #000000;
+}
+.subunitSudeste2{
+    fill: #000000;
+}
+.subunitSul2{
+    fill: #000000;
+}
 
 .hidden { 
   display: none; 
@@ -168,37 +196,73 @@ div.tooltipDonut {
 #squareOne {    
 position:absolute;
 top:50px;
-left:300px;
-width:350px;
+left:0px;
+width:300px;
 height: 350px; 
 }
 #squareTwo {    
 position:absolute;
 top:130px;
-left:700px;
-width:450px;
+left:320px;
+width:280px;
 height: 280px;
 }
 #squareThree {    
 position:absolute;
-top:450px;
-left:300px;
-width:270px;
-height: 270px;
+top:130px;
+left:510px;
+width:200px;
+height: 300px;
 }
 #squareFour {    
 position:absolute;
 top:480px;
-left:600px;
+left:0px;
 width:300px;
-height: 300px;
+height: 250px;
 }
 #squareFive {    
 position:absolute;
 top:440px;
-left:850px;
-width:380px;
+left:300px;
+width:350px;
+height: 250px;
+}
+
+#squareOne2 {    
+position:absolute;
+top:50px;
+left:620px;
+width:300px;
+height: 350px; 
+}
+#squareTwo2 {    
+position:absolute;
+top:130px;
+left:940px;
+width:280px;
 height: 280px;
+}
+#squareThree2 {    
+position:absolute;
+top:130px;
+left:1130px;
+width:200px;
+height: 300px;
+}
+#squareFour2 {    
+position:absolute;
+top:480px;
+left:600px;
+width:300px;
+height: 250px;
+}
+#squareFive2 {    
+position:absolute;
+top:440px;
+left:900px;
+width:350px;
+height: 250px;
 }
 
 .chart div {

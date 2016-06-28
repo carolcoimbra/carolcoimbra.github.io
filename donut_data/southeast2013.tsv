@@ -1,11 +1,11 @@
-category	measure					
-General administration	  1133730315.94 						
-Hospital and outpatient care	  212016051.73 						
-Scientific development	  44685726.34 						
-Basic education	  144660140.25 						
-Adult education	  1675895.03 						
-Elementary school	  318192.31 						
-Professionalizing education	  197031452.53 						
-College education	  1137589238.42 						
-Human resource development	  16409302.76 						
-Funds transfer for basic education	  9693922.41 						
+Year	ID	Region	Subfunction	Total
+2013	12	Southeast	General administration	1133730315.94
+2013	14	Southeast	Hospital and outpatient care	212016051.73
+2013	23	Southeast	Scientific development	44685726.34
+2013	3	Southeast	Basic education	144660140.25
+2013	1	Southeast	Adult education	1675895.03
+2013	9	Southeast	Elementary school	318192.31
+2013	20	Southeast	Professionalizing education	197031452.53
+2013	6	Southeast	College education	1137589238.42
+2013	15	Southeast	Human resource development	16409302.76
+2013	11	Southeast	Funds transfer for basic education	9693922.41

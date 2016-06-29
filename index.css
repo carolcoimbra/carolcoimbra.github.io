@@ -5,7 +5,7 @@ body {
 }
 h1 {
 	font-family: "Tahoma";
-  font-size: 35;
+  font-size: 24pt;
   font-weight: 400;
   color: #696969;
   text-align: center;
@@ -14,7 +14,7 @@ h1 {
 }
 h2{
 	font-family: "Tahoma";
-  font-size: 25;
+  font-size: 20pt;
   font-weight: 400;
   color: #808080;
   text-align: center;
@@ -22,7 +22,7 @@ h2{
 }
 h3{
   font-family: "Tahoma";
-  font-size: 15;
+  font-size: 14pt;
   font-weight: 200;
   color: #808080;
   text-align: center;
@@ -30,35 +30,24 @@ h3{
   margin-bottom: 0px;
 }
 h4 {
-  font-family: Tahoma;
-  font-size: 5;  
-  font-weight: 200; 
-  text-align: center; 
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #808080;  
+  font-family: "Tahoma";
+  font-size: 10pt;
+  font-weight: 200;
+  color: #999999;
+  text-align: center;
+  margin: 0px;
 }
 
 footer {
 	font-family: "Tahoma";
-  font-size: 8;
+  font-size: 10pt;
   font-weight: 200;
   color: #999999;
-  text-align: right;
+  text-align: left;
   margin: 0px;
 }
 
-#buttons{
-	position:absolute;
-	top:410px;
-	left:20px; 
-}
 
-#buttons2{
-  position:absolute;
-  top:410px;
-  left:700px; 
-}
 
 rect.contour {
     stroke: #E6E6E6;
@@ -82,15 +71,15 @@ div.tooltipEvasion {
 #names{
 	position:absolute;
 	float: middle;
-	top:1120px;
-	left:82%;
+	top:1080px;
 }
 
 #evasion{
 	position:absolute;
-	float:center;
+	float:left;
   margin: 0px;
-	top: 800px;
+	top: 720px;
+	left:-50px
 }
 #schoolLevel {
     position: relative;
@@ -145,7 +134,6 @@ div.tooltipEvasion {
 .subunitSul{
     fill: #000000;
 }
-
 .subunitNorte2{
     fill: #000000;
 }
@@ -161,6 +149,9 @@ div.tooltipEvasion {
 .subunitSul2{
     fill: #000000;
 }
+
+
+
 
 .hidden { 
   display: none; 
@@ -193,42 +184,53 @@ div.tooltipDonut {
   color: #FFFFFF;    
 }
 
+#buttons{
+	position:absolute;
+	top:380px;
+	left:10px; 
+}
+#buttons2{
+	position:absolute;
+	top:380px;
+	left:670px; 
+}
+
+
 #squareOne {    
 position:absolute;
 top:50px;
-left:0px;
+left:-20px;
 width:300px;
 height: 350px; 
 }
 #squareTwo {    
 position:absolute;
-top:130px;
-left:320px;
-width:280px;
-height: 280px;
+top:450px;
+left:350px;
+width:300px;
+height: 250px;
 }
 #squareThree {    
 position:absolute;
-top:130px;
-left:510px;
-width:200px;
-height: 300px;
+top:100px;
+left:220px;
+width:270px;
+height: 270px;
 }
 #squareFour {    
 position:absolute;
-top:480px;
-left:0px;
-width:300px;
-height: 250px;
+top:130px;
+left:480px;
+width:200px;
+height: 300px;
 }
 #squareFive {    
 position:absolute;
 top:440px;
-left:300px;
-width:350px;
-height: 250px;
+left:10px;
+width: 350px;
+height: 200px;
 }
-
 #squareOne2 {    
 position:absolute;
 top:50px;
@@ -236,33 +238,33 @@ left:620px;
 width:300px;
 height: 350px; 
 }
-#squareTwo2 {    
+#squareTwo2{    
 position:absolute;
-top:130px;
-left:940px;
-width:280px;
-height: 280px;
+top:450px;
+left:650px;
+width:300px;
+height: 250px;
 }
 #squareThree2 {    
 position:absolute;
-top:130px;
-left:1130px;
-width:200px;
-height: 300px;
+top:100px;
+left:850px;
+width:270px;
+height: 270px;
 }
 #squareFour2 {    
 position:absolute;
-top:480px;
-left:600px;
-width:300px;
-height: 250px;
+top:130px;
+left:1110px;
+width:200px;
+height: 300px;
 }
 #squareFive2 {    
 position:absolute;
 top:440px;
-left:900px;
-width:350px;
-height: 250px;
+left:950px;
+width: 350px;
+height: 200px;
 }
 
 .chart div {

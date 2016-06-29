@@ -1,7 +1,7 @@
  
  
 	var width = 350,
-        height = 250;
+        height = 350;
 
     var expScale = d3.scale.linear().range([5, 100]);
 	var color = ["#2CA02C", "#AEC7E8", "#FF7F0E", "#FFBB78", "#1F77B4", "#98DF8A", "#D62728", "#FF9896", "#E57C7D", "#4AC2B6", "#9467BD", "#C5B0D5", "#8C564B", "#C49C94", "#E377C2", "#F7B6D2", "#7F7F7F", "#C7C7C7", "#BCBD22", "#DBDB8D", "#17BECF"];
@@ -64,6 +64,39 @@
 		}
 
 	  function draw(words) {
+
+	  	var region;
+	  	if(reg == 0)
+	  	{
+	  		region = "Top Exported Products North "+ Year[idYear];
+	  	}
+	  	else if(reg == 1)
+	  	{
+	  		region = "Top Exported Products Northeast "+ Year[idYear];
+	  	}
+	  	else if(reg == 2)
+	  	{
+	  		region = "Top Exported Products Midwest "+ Year[idYear];
+	  	}
+	  	else if(reg == 3)
+	  	{
+	  		region = "Top Exported Products Southeast "+ Year[idYear];
+	  	}
+	  	else if(reg == 4)
+	  	{
+	  		region = "Top Exported Products South "+ Year[idYear];
+	  	}
+
+
+	  	d3.select("#word_title_1").remove()
+	  	var word_title_1 = document.createElement("div");
+        word_title_1.id = "word_title_1";
+
+        document.body.appendChild(word_title_1);
+
+        word_title_1.innerHTML = region;
+
+        ///
 		  
 		d3.select(div).remove();
 			
@@ -90,6 +123,7 @@
 			  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
 			})
 			.text(function(d) { return d.text; });
+			
 	  }
 	}
 	else if(div == "#squareFive2")
@@ -114,6 +148,38 @@
 			else if(idYear2 == 4){
 				database = cloud_bases_de_dados2013[reg];
 			}
+
+			var region;
+		  	if(reg == 0)
+		  	{
+		  		region = "Top Exported Products North "+ Year[idYear2];
+		  	}
+		  	else if(reg == 1)
+		  	{
+		  		region = "Top Exported Products Northeast "+ Year[idYear2];
+		  	}
+		  	else if(reg == 2)
+		  	{
+		  		region = "Top Exported Products Midwest "+ Year[idYear2];
+		  	}
+		  	else if(reg == 3)
+		  	{
+		  		region = "Top Exported Products Southeast "+ Year[idYear2];
+		  	}
+		  	else if(reg == 4)
+		  	{
+		  		region = "Top Exported Products South "+ Year[idYear2];
+		  	}
+
+
+		  	d3.select("#word_title_2").remove()
+		  	var word_title_2 = document.createElement("div");
+	        word_title_2.id = "word_title_2";
+
+	        document.body.appendChild(word_title_2);
+
+	        word_title_2.innerHTML = region;
+	        //////end of title
 		 
 			
 			d3.tsv(database, function(data) {

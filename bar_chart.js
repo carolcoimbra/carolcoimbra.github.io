@@ -20,16 +20,59 @@
 		}
 		else if(idYear == 1){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else if(idYear == 2){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else if(idYear == 3){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else{
-			database = bar_bases_de_dados2010[reg];	
+			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}	
+
+
+		var region;
+	  	if(reg == 0)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled North "+ Year[idYear];
+	  	}
+	  	else if(reg == 1)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Northeast "+ Year[idYear];
+	  	}
+	  	else if(reg == 2)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Midwest "+ Year[idYear];
+	  	}
+	  	else if(reg == 3)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Southeast "+ Year[idYear];
+	  	}
+	  	else if(reg == 4)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled South "+ Year[idYear];
+	  	}
+
+
+	  	d3.select("#bar_title_1").remove()
+	  	var bar_title_1 = document.createElement("div");
+        bar_title_1.id = "bar_title_1";
+
+        document.body.appendChild(bar_title_1);
+
+        bar_title_1.innerHTML = region;
+        //////end of title
+
+
+
+
+
+
 	
 		d3.select(div).remove();
 		
@@ -146,17 +189,54 @@
 		}
 		else if(idYear2 == 1){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else if(idYear2 == 2){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else if(idYear2 == 3){
 			database = bar_bases_de_dados2010[reg];
+			colors_aux = colors[reg];
 		}
 		else{
 			database = bar_bases_de_dados2010[reg];	
+			colors_aux = colors[reg];
 		}
 	
+
+		var region;
+	  	if(reg == 0)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled North "+ Year[idYear2];
+	  	}
+	  	else if(reg == 1)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Northeast "+ Year[idYear2];
+	  	}
+	  	else if(reg == 2)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Midwest "+ Year[idYear2];
+	  	}
+	  	else if(reg == 3)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled Southeast "+ Year[idYear2];
+	  	}
+	  	else if(reg == 4)
+	  	{
+	  		region = "Top University Courses By Number Of Enrolled South "+ Year[idYear2];
+	  	}
+
+
+	  	d3.select("#bar_title_2").remove()
+	  	var bar_title_2 = document.createElement("div");
+        bar_title_2.id = "bar_title_2";
+
+        document.body.appendChild(bar_title_2);
+
+        bar_title_2.innerHTML = region;
+
+
 		d3.select(div).remove();
 		
 		var div_x = document.createElement("squareTwo2");

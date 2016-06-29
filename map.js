@@ -473,3 +473,6 @@ function setYear2(id){
   d3.selectAll(".subunitCentroOeste2").style("opacity", function(){return 0.2+transferCentroOeste[idYear]/transferSum[idYear];});  
  
 }
+function alerta(){
+	alert("Helcome to our dashboard!\n\nThis dashboard was designed using D3.js and a subset of Dataviva’s dataset, and it is focused on federal government’s potential areas of investment. We investigate exporting activities, school dropouts, prevalent courses on a specific region and financial funding for educational and cultural purposes during the period of 2009-2013.\n\nOn Heatmap you can find the school dropouts by grade, computed through the years. The values were obtained using the range between years. The positive range means a dropout itself, and a negative range means school enrollments.\n\nUsing the Country Map, it's possible to filter data per region and per year, giving access to main college courses, funding and exporting information. The color intensity on the map's regions is directly related to the amount of funding that has been provided by the government to these same regions.");
+}

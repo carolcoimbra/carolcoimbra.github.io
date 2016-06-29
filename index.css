@@ -71,14 +71,51 @@ div.tooltipEvasion {
 #names{
 	position:absolute;
 	float: middle;
-	top:1080px;
+	top:1110px;
+}
+
+#word_title_1{
+  position: absolute;
+  left: 70px;
+  top:420px;
+  font-family: Tahoma;
+  font-size: 10px;  
+  font-weight: bold;  
+  color: #696969;  
+}
+#word_title_2{
+  position: absolute;
+  left: 1040px;
+  top:420px;
+  font-family: Tahoma;
+  font-size: 10px;  
+  font-weight: bold;  
+  color: #696969;  
+}
+#bar_title_1{
+  position: absolute;
+  left: 300px;
+  top:420px;
+  font-family: Tahoma;
+  font-size: 10px;  
+  font-weight: bold;  
+  color: #696969;  
+}
+#bar_title_2{
+  position: absolute;
+  left: 660px;
+  top:420px;
+  font-family: Tahoma;
+  font-size: 10px;  
+  font-weight: bold;  
+  color: #696969;  
 }
 
 #evasion{
 	position:absolute;
 	float:left;
   margin: 0px;
-	top: 720px;
+	top: 780px;
 	left:-50px
 }
 #schoolLevel {
@@ -188,11 +225,20 @@ div.tooltipDonut {
 	position:absolute;
 	top:380px;
 	left:10px; 
+  z-index: 9;
 }
 #buttons2{
 	position:absolute;
 	top:380px;
 	left:670px; 
+  z-index: 10;
+}
+
+#about{
+position: absolute;
+left: 1150px;
+top: 20px;
+
 }
 
 
@@ -202,6 +248,7 @@ top:50px;
 left:-20px;
 width:300px;
 height: 350px; 
+z-index: 8;
 }
 #squareTwo {    
 position:absolute;
@@ -209,6 +256,7 @@ top:450px;
 left:350px;
 width:300px;
 height: 250px;
+z-index: 8;
 }
 #squareThree {    
 position:absolute;
@@ -221,7 +269,7 @@ height: 270px;
 position:absolute;
 top:130px;
 left:480px;
-width:200px;
+width:150px;
 height: 300px;
 }
 #squareFive {    
@@ -229,7 +277,7 @@ position:absolute;
 top:440px;
 left:10px;
 width: 350px;
-height: 200px;
+height: 350px;
 }
 #squareOne2 {    
 position:absolute;
@@ -264,7 +312,7 @@ position:absolute;
 top:440px;
 left:950px;
 width: 350px;
-height: 200px;
+height: 350px;
 }
 
 .chart div {

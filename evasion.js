@@ -113,7 +113,7 @@ var subtitleSchoolLevel = function(container) {
     .enter().append("text")
       .text(function (d) { return d; })
       .attr("x", margin.left+margin.right)
-      .attr("y", function (d, i) { return (2+i)*sizeGrid; })
+      .attr("y", function (d, i) { return (1.2+i)*sizeGrid; })
       .style("text-anchor", "end")
       .attr("transform", "translate(-6," + sizeGrid / 1.5 + ")")
       .attr("font-family", "Tahoma")

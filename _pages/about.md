@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student in Computer Science at <a href='https://www.uni-saarland.de/en/'>Universität des Saarlandes (UdS)</a> also affiliated to the <a href='https://www.demogr.mpg.de/en'>Max Planck Institute for Software Systems (MPIDR)</a> and the <a href='https://www.mpi-sws.org/'>Max Planck Institute for Software Systems (MPI-SWS)</a>. coimbravieira[at]demogr[dot]mpg[dot]de
+subtitle: PhD Student in Computer Science at Universität des Saarlandes (UdS) affiliated to the Max Planck Institute for Demographic Research (MPIDR) and the Max Planck Institute for Software Systems (MPI-SWS).
 
 profile:
   align: right

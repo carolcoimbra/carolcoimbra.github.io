@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office 308</p>
+    <p>coimbravieira[at]demogr[dot]mpg[dot]de</p>
     <p>Konrad-Zuse-Straße 1</p>
     <p>18057 - Rostock, Germany</p>
 

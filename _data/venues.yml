@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"TheWebConf":
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"PLOS ONE":
+  url: https://journals.plos.org/plosone/
+  color: "#009f36"
 
-"Vision":
+"PDR":
+  url: https://onlinelibrary.wiley.com/journal/17284457
   color: "#009f36"
